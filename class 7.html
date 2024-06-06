@@ -12,15 +12,35 @@
       <h1>Payment Form</h1>
       <h2>Contect Information</h2>
       <!-- input type text = because we take text in input -->
-      <p>Name:<input type="text" name="name"></p>
+      <p>Name:<input type="text" name="name" required></p>
      <!-- fieldset is used for group area -->
-     <!-- legend is used for goup's Name for example here gender is a name group-->
+     <!-- legend is used for group's Name for example here gender is a name group-->
      <fieldset> <legend>Gender</legend><p>
-        <!--  -->
+        <!--   -->
         Male <input type="radio" name="gender" id="male">
-        Female <input type="radio" name="gender" id="female">
+        Female <input type="radio" name="gender" id="female" required>
       </p> </fieldset>
-      <p>Address: <textarea name="address" id="address" cols="120" rows="8"></textarea></p>
+      <p>Address: <textarea name="address" id="address" cols="120" rows="8" required></textarea></p>
+      <p>Email: <input type="email" name="email" id="email" required></p>
+      <p>Pincode: <input type="number" name="Pincode" id="pincode" required></p>
+      <h2>Payment Informaton</h2>
+      <p>Card Type:
+        <!-- select is user for select one option in list -->
+        <select name="card_type" id="card_type" required>
+            <!-- option = used for given option  -->
+            <option value="">--Select a Card Type--</option>
+            <option value="Visa">Visa</option>
+            <option value="Master card">Master Card</option>
+            <option value="Rupay">Rupay</option>
+            <option value="credit card">Credit Card</option>
+        </select>
+      </p>
+      <p>
+        Card Number: <input type="number" name="card_number" id="card_number" required>
+      </p>
+    <p>  Card Expiry Date: <input type="date" name="exp_date" id="exp_date" required> </p>
+    <p> CVV: <input type="password" name="CVV" id="CVV" required></p>
+    <p> <input type="submit" value="Pay Now" required></p>
     </form>
 </body>
 </html>
