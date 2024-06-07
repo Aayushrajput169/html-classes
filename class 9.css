@@ -1,0 +1,12 @@
+/*.(dot) is used to target class in css  (dot means class) */
+#Fristdiv{
+    background-color: aqua;
+}
+
+.red{
+    background-color: blue;
+}
+.rose{
+    background-color: pink;
+}
+
